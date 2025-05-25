@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet RAG</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans Mon Projet RAG</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Analyse de données</h2>
+            <p>Ce projet utilise l'apprentissage automatique pour analyser des données provenant de fichiers texte et PDF.</p>
+        </section>
+        <section>
+            <h2>Traitement de PDF</h2>
+            <p>Vous pouvez télécharger un fichier PDF pour l'analyser.</p>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdf_file" accept=".pdf" required>
+                <button type="submit">Télécharger</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mon Projet RAG. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
